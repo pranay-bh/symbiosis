@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF"
+    tools:context="com.solvedunsolved.plantsymbiosis.Activities.yourplants.DetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView"
+        android:layout_width="410dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.04">
+
+
+        <TextView
+            android:id="@+id/DescriptionDet"
+            android:layout_width="356dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:background="@layout/border"
+            android:gravity="center"
+            android:hint="@string/description"
+            android:textAlignment="inherit"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plantNameDet"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/conditionsDet"
+            android:layout_width="356dp"
+            android:layout_height="120dp"
+            android:background="@layout/border"
+            android:gravity="center"
+            android:textAlignment="inherit"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plantNameDet"
+            app:layout_constraintVertical_bias="0.434" />
+
+        <TextView
+            android:id="@+id/plantNameDet"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@layout/border"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/plant1"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/plantImageIDDets"
+            android:layout_width="109dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@layout/border"
+            android:contentDescription="@string/todo"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/DescriptionDet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.086" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:background="@layout/border"
+            android:hint="@string/category"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/DescriptionDet"
+            app:layout_constraintEnd_toEndOf="@+id/plantNameDet"
+            app:layout_constraintTop_toBottomOf="@+id/plantNameDet"
+            app:layout_constraintVertical_bias="0.2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/editButtonDet"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:background="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/deleteButtonDet"
+        app:layout_constraintEnd_toStartOf="@+id/deleteButtonDet"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/deleteButtonDet"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/deleteButtonDet"
+        android:layout_width="44dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="112dp"
+        android:background="@android:drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.256" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.solvedunsolved.plantsymbiosis"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activities.splashscreen"
+            android:theme="@style/splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Activities.Menu.Feedback"
+            android:label="Feedback"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.yourplants.ListActivity"
+            android:label="Your plants"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Activities.yourplants.Plants"
+            android:label="Your Plants"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Activities.yourplants.DetailsActivity"
+            android:label="Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.yourplants.ListActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.YourSymbiosis.symbiosis"
+            android:label="List"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.YourSymbiosis.list"
+            android:label="List"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.YourSymbiosis.Details"
+            android:label="Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.YourSymbiosis.list" />
+        </activity>
+        <activity
+            android:name=".Activities.Jsonsymbiosis.Json_symbiosis"
+            android:label="Suggestions"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.Jsonsymbiosis.Json_symbyosis_deatails"
+            android:label="Details"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.Jsonsymbiosis.Json_symbiosis" />
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

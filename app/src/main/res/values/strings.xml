@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Symbiosis</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Plant Symbiosis</string>
+    <string name="nav_header_subtitle">Simplifies Gardening</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_plant">Suggestions</string>
+    <string name="menu_symbiosis">Suggestions</string>
+    <string name="planting">planting</string>
+    <string name="add_you_first_plant">Add your first plant</string>
+    <string name="title_activity_plants">Plants</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_jsonplants">Plants Detail</string>
+    <string name="menu_jsonsymbiosis">Symbiotic Relationships</string>
+    <string name="description">description</string>
+    <string name="enter_plants_details">enter plants details</string>
+    <string name="plant_1_name">plant 1 name</string>
+    <string name="category_of_symbiosis">category of symbiosis</string>
+    <string name="comments_relation_between_plants">comments/relation between plants …</string>
+    <string name="plant_2_name">plant 2 name</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="save">save</string>
+
+    <string name="category">category</string>
+    <string name="img">Img</string>
+    <string name="textview">Textview</string>
+    <string name="plant1">plant1</string>
+    <string name="plant2">plant2</string>
+    <string name="add_your_first_relation">Add your First Relation</string>
+    <string name="todo">TODO</string>
+    <string name="helpedby">Helpedby :</string>
+    <string name="image">image</string>
+    <string name="helps">Helps :</string>
+    <string name="are_you_sure">are you sure</string>
+    <string name="search">search</string>
+    <string name="feedback">Feedback</string>
+    <string name="name">name</string>
+    <string name="enter_plant_1_to_find_details">Enter plant 1 to find details</string>
+    <string name="enter_second_plant_name">enter second plant name</string>
+</resources>

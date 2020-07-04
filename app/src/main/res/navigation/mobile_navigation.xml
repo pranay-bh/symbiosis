@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.solvedunsolved.plantsymbiosis.Activities.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <activity
+        android:id="@+id/nav_yourplants"
+        android:name="com.solvedunsolved.plantsymbiosis.Activities.yourplants.Plants"
+        android:label="@string/menu_plant"
+        tools:layout="@layout/activity_plants" />
+
+    <activity
+        android:id="@+id/nav_yourReln"
+        android:name="com.solvedunsolved.plantsymbiosis.Activities.YourSymbiosis.symbiosis"
+        android:label="@string/menu_symbiosis"
+        tools:layout="@layout/activity_symbiosis" />
+
+    <activity
+        android:id="@+id/nav_jsonsymbiosis"
+        android:name="com.solvedunsolved.plantsymbiosis.Activities.Jsonsymbiosis.Json_symbiosis"
+        android:label="@string/menu_jsonsymbiosis"
+        tools:layout="@layout/activity_json_symbiosis" />
+
+</navigation>
