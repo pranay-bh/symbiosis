@@ -168,7 +168,7 @@ public class Plants extends AppCompatActivity {
 
     public byte[] getByte(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 0, stream);
         return stream.toByteArray();
     }
 

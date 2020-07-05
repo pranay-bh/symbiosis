@@ -81,7 +81,7 @@ public class Plant {
     // convert from byte array to bitmap
     public static byte[] getByte(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 0, stream);
         return stream.toByteArray();
     }
 
@@ -89,6 +89,5 @@ public class Plant {
     public static Bitmap getImage(byte[] image) {
         return BitmapFactory.decodeByteArray(image, 0, image.length);
     }
-
 
 }
