@@ -17,17 +17,17 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="124dp"
+            android:layout_height="wrap_content"
             android:padding="20dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="125dp">
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="153dp"
-                    android:layout_height="101dp"
+                    android:layout_height="120dp"
                     android:layout_margin="20dp"
                     android:layout_marginLeft="5dp"
                     android:background="@layout/border"
@@ -42,7 +42,7 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="149dp"
-                    android:layout_height="101dp"
+                    android:layout_height="120dp"
                     android:layout_margin="20dp"
                     android:background="@layout/border"
                     android:padding="4dp"
@@ -59,53 +59,51 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/relativeLayout2"
             android:layout_width="match_parent"
-            android:layout_height="113dp"
+            android:layout_height="100dp"
             android:layout_gravity="bottom"
-            android:padding="15dp">
+            android:paddingLeft="15dp">
 
 
             <TextView
                 android:id="@+id/Plantpairname1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="12dp"
                 android:fontFamily="@font/aclonica"
                 android:text="@string/name"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.112"
+                app:layout_constraintBottom_toTopOf="@+id/Plantpairname2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/Plantpairname2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:fontFamily="@font/aclonica"
                 android:text="@string/name"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/SymCategory"
+                app:layout_constraintBottom_toTopOf="@+id/SymCategory"
                 app:layout_constraintStart_toStartOf="@+id/Plantpairname1"
-                app:layout_constraintTop_toBottomOf="@+id/Plantpairname1"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toTopOf="@+id/SymDel"
+                app:layout_constraintVertical_bias="0.545" />
 
             <TextView
                 android:id="@+id/SymCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:paddingTop="10dp"
                 android:text="@string/category"
                 android:textSize="14sp"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/Plantpairname2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.726" />
+                app:layout_constraintStart_toStartOf="@+id/Plantpairname2" />
 
             <Button
                 android:id="@+id/SymDel"

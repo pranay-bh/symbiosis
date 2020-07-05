@@ -128,26 +128,18 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/relativeView2"
+    <Button
+        android:id="@+id/suggestionbutton"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@layout/border"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableStart="@android:drawable/btn_star"
+        android:drawableEnd="@android:drawable/btn_star"
+        android:text="Planting Pattern"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeView"
-        app:layout_constraintVertical_bias="0.076">
-
-        <TextView
-            android:id="@+id/suggestionsdet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Suggestion"
-            android:padding="5dp"
-            android:textSize="16sp" />
-    </RelativeLayout>
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

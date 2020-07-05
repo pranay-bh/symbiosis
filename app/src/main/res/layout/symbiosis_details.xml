@@ -20,21 +20,20 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="568dp"
+        android:layout_height="wrap_content"
         android:foregroundGravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
 
         <TextView
             android:id="@+id/symRelationship"
-            android:layout_width="339dp"
+            android:layout_width="match_parent"
             android:layout_height="136dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginTop="16dp"
             android:background="@layout/border"
             android:hint="@string/comments_relation_between_plants"
             android:textAlignment="center"
@@ -42,91 +41,76 @@
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.555"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SymCategory" />
 
         <TextView
             android:id="@+id/SymCategory"
-            android:layout_width="340dp"
+            android:layout_width="match_parent"
             android:layout_height="45dp"
+            android:layout_marginTop="12dp"
             android:background="@layout/border"
             android:text="@string/category"
-            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textSize="18sp"
             android:textStyle="italic"
-            app:layout_constraintBottom_toTopOf="@+id/symRelationship"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.577"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PlantpairnameDet2"
-            app:layout_constraintVertical_bias="0.558" />
+            app:layout_constraintTop_toBottomOf="@+id/PlantpairnameDet2" />
 
         <TextView
             android:id="@+id/PlantpairnameDet1"
             android:layout_width="match_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="30dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="12dp"
             android:background="@layout/border"
             android:fontFamily="@font/aclonica"
             android:text="@string/textview"
+            android:textAlignment="textStart"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.139"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
             android:id="@+id/PlantpairnameDet2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="284dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
             android:background="@layout/border"
             android:fontFamily="@font/aclonica"
             android:text="@string/textview"
-            android:textAlignment="center"
+            android:textAlignment="textEnd"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PlantpairnameDet1" />
+
+        <ImageView
+            android:id="@+id/textView2"
+            android:layout_width="173dp"
+            android:layout_height="198dp"
+            android:background="@layout/border"
+            android:contentDescription="@string/plant1"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:text="@string/img"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/textView2"
-            android:layout_width="108dp"
-            android:layout_height="128dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="60dp"
-            android:background="@layout/border"
-            android:scaleType="fitXY"
-            android:padding="5dp"
-            android:contentDescription="@string/plant1"
-            android:text="@string/img"
-            app:layout_constraintBottom_toTopOf="@+id/SymCategory"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <ImageView
             android:id="@+id/textView3"
-            android:layout_width="108dp"
-            android:layout_height="128dp"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="40dp"
+            android:layout_width="173dp"
+            android:layout_height="198dp"
             android:background="@layout/border"
-            android:padding="5dp"
             android:contentDescription="@string/plant2"
-            android:text="@string/img"
+            android:padding="5dp"
             android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="@+id/SymCategory"
+            android:text="@string/img"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.037" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

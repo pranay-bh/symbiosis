@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.solvedunsolved.plantsymbiosis"
-    >
+    package="com.solvedunsolved.plantsymbiosis">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -19,12 +18,13 @@
             android:theme="@style/splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activities.Menu.Feedback"
             android:label="Feedback"
@@ -41,17 +41,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activities.MainActivity" />
         </activity>
-
         <activity
             android:name=".Activities.yourplants.Plants"
             android:label="Your Plants"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustPan" >
+            android:windowSoftInputMode="adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activities.MainActivity" />
         </activity>
-
+        <activity
+            android:name=".Activities.Jsonsymbiosis.Suggestions"
+            android:label="Planting pattern"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.Jsonsymbiosis.Json_symbiosis" />
+        </activity>
         <activity
             android:name=".Activities.yourplants.DetailsActivity"
             android:label="Details"

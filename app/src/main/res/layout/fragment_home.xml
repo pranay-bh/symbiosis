@@ -43,7 +43,7 @@
                         android:fontFamily="@font/aclonica"
                         android:gravity="bottom|center"
                         android:padding="5dp"
-                        android:text="Feedbaxk"
+                        android:text="@string/feedback"
                         android:textStyle="bold" />
 
                     <ImageView

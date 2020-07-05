@@ -10,7 +10,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="471dp">
+        android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/relativeLayout"
@@ -19,72 +19,81 @@
             android:padding="5dp">
 
 
+            <RelativeLayout
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tile">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="109dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    android:background="@layout/border"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/add_btn" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="109dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:background="@layout/border"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/add_btn" />
+
+            </RelativeLayout>
+
             <EditText
                 android:id="@+id/Plantpairname1"
-                android:layout_width="127dp"
-                android:layout_height="44dp"
-                android:layout_marginBottom="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:background="@layout/border"
                 android:hint="@string/plant_1_name"
                 android:importantForAutofill="no"
-                app:layout_constraintBottom_toTopOf="@+id/SaveButtonSymbiosis"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/imageButton3"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5" />
 
             <EditText
                 android:id="@+id/Plantpairname2"
-                android:layout_width="140dp"
-                android:layout_height="46dp"
-                android:layout_marginStart="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:background="@layout/border"
                 android:hint="@string/plant_2_name"
                 android:importantForAutofill="no"
                 android:textAlignment="textEnd"
-                app:layout_constraintBottom_toTopOf="@+id/SymCategory"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.125"
-                app:layout_constraintStart_toEndOf="@+id/Plantpairname1"
-                app:layout_constraintTop_toTopOf="@+id/Plantpairname1"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Plantpairname1" />
 
             <TextView
                 android:id="@+id/tile"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:padding="0dp"
                 android:text="@string/enter_details"
+                android:textAlignment="center"
                 android:textSize="18sp"
+
                 android:textStyle="bold|italic"
-                app:layout_constraintBottom_toTopOf="@+id/imageButton4"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <Button
-                android:id="@+id/SaveButtonSymbiosis"
-                android:layout_width="360dp"
-                android:layout_height="47dp"
-                android:background="@layout/border2"
-                android:text="@string/save"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.625"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.988" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/symRelationship"
-                android:layout_width="323dp"
+                android:layout_width="match_parent"
                 android:layout_height="102dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginTop="12dp"
                 android:autofillHints=""
                 android:background="@layout/border"
                 android:ems="10"
@@ -93,53 +102,34 @@
                 android:isScrollContainer="false"
                 android:singleLine="false"
                 android:textAlignment="textStart"
-                app:layout_constraintBottom_toTopOf="@+id/SaveButtonSymbiosis"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Plantpairname1"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toBottomOf="@+id/SymCategory" />
 
             <EditText
                 android:id="@+id/SymCategory"
-                android:layout_width="322dp"
-                android:layout_height="53dp"
-                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:autofillHints=""
                 android:background="@layout/border"
                 android:hint="@string/category_of_symbiosis"
-                app:layout_constraintBottom_toTopOf="@+id/symRelationship"
-                app:layout_constraintEnd_toEndOf="@+id/Plantpairname2"
-                app:layout_constraintStart_toStartOf="@+id/Plantpairname1"
-                app:layout_constraintTop_toBottomOf="@+id/Plantpairname1"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="109dp"
-                android:layout_height="110dp"
-                android:contentDescription="@string/todo"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-                app:layout_constraintHorizontal_bias="0.116"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tile"
-                app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/add_btn" />
-
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="108dp"
-                android:layout_height="112dp"
-                android:contentDescription="@string/plant2"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toTopOf="@+id/Plantpairname2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/tile"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.884"
-                app:srcCompat="@drawable/add_btn" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Plantpairname2" />
+
+            <Button
+                android:id="@+id/SaveButtonSymbiosis"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
+                android:background="@layout/border2"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/symRelationship" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
